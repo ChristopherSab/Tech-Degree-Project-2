@@ -1,0 +1,108 @@
+/* Main Styles*/
+
+*{
+    line-height: 1.5;
+    color: grey;
+}
+
+
+body {
+
+    background: #FAF9F9;
+    text-align: center;
+    justify-content: center;
+    font-family:'Kulim Park', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*Header Section Styles*/
+
+ul {
+
+    padding-inline-start: 0px;
+}
+
+
+
+.name{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.main-nav {
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+
+.main-nav li{
+
+    margin-bottom: 1rem;
+    list-style: none;
+    display: block;
+    background-color: white;
+    padding: 1.5rem 0;
+}
+
+.main-nav a { 
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.profile {
+    text-align: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+/*Main Section Styles*/
+
+.container {
+    background-color: white;
+    margin-inline-start: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+
+.box img {
+    max-width: 250px;
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+    margin: 0.5rem 2rem;
+}
+
+
+/*Footer Section Styles*/
+
+.footer {
+    text-align: center;
+    margin: 5rem 1rem 1rem 0;
+
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+.bottom-nav {
+    margin: 0 1rem;
+    border-top: 2px solid lightgrey;
+}
+
+.bottom-title {
+    float: left;
+}
+
+.back-to-top {
+    float: right;
+}
