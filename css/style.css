@@ -1,55 +1,69 @@
+/*CSS Variables*/
+:root {
+
+    --primary: #99E89A;
+    --secondary:#E1FAD4;
+    --tertiary:#FFFEA8;
+}
+
+
 /* Main Styles*/
 
 *{
     line-height: 1.5;
     color: grey;
+    box-sizing: border-box;
 }
 
 
 body {
-
     background: #FAF9F9;
     text-align: center;
-    justify-content: center;
     font-family:'Kulim Park', Arial, Helvetica, sans-serif;
     margin: 0;
+    max-width: 100%;
+}
+
+.title {
+    color: #666666;
 }
 
 /*Header Section Styles*/
 
-ul {
 
-    padding-inline-start: 0px;
+.main-header {
+    margin: 0 1rem;
 }
 
-
-
 .name{
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 2.5rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    color: var(--primary);
 }
 
 .main-nav {
-    justify-content: center;
-    margin: 0 1rem;
+    margin: 0 auto;
+    padding-inline-start: 0;
 }
 
 
 .main-nav li{
-
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     list-style: none;
     display: block;
-    background-color: white;
-    padding: 1.5rem 0;
+    background-color: var(--tertiary);
+    padding: 1rem 0; 
 }
 
 .main-nav a { 
     text-decoration: none;
     font-size: 20px;
     font-weight: 900;
+    color: #666666;
 }
+
 
 .profile img {
     width: 200px;
@@ -58,51 +72,202 @@ ul {
 .profile {
     text-align: center;
     justify-content: center;
-    margin: 0 1rem;
+    margin: 4.5rem 0;
 }
 
 /*Main Section Styles*/
 
 .container {
-    background-color: white;
+    background-color: var(--secondary);
     margin-inline-start: 0;
     width: 100%;
     padding-bottom: 2rem;
+    border-bottom: 1px solid var(--primary);
 }
 
 
 .box img {
-    max-width: 250px;
+    width: 225px;
     justify-content: center;
 }
 
 .box {
     text-align: center;
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 1rem;
 }
 
 
 /*Footer Section Styles*/
 
-.footer {
+.contact-section {
     text-align: center;
-    margin: 5rem 1rem 1rem 0;
+    margin: 5rem 1rem 0 1rem;
+    border-bottom: 1px solid var(--primary);
 
 }
 
-.footer span {
+.contact-section span {
     font-weight: bold;
 }
 
-.bottom-nav {
-    margin: 0 1rem;
-    border-top: 2px solid lightgrey;
+.footer li {
+    display: none;
 }
 
-.bottom-title {
+
+.footer-name {
     float: left;
+    padding: 0 1rem;
+    font-weight: bold;
 }
 
 .back-to-top {
     float: right;
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.back-to-top a {
+    text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px){
+
+    .main-nav {
+        justify-content: center;
+        margin: 0 1rem;
+    } 
+    
+    .main-nav li{
+        margin-bottom: 3.5rem;
+        margin-left: 2rem;
+        list-style: none;
+        display: inline-block;
+        background-color: var(--tertiary);
+        padding: 1rem;
+        font-weight: bold; 
+    }
+
+    .profile {
+        margin: 1rem 1rem 3rem 1rem;
+    }
+
+    .profile p {
+        float: left;
+        margin: 0;
+        text-align:left;
+        width: 45%;
+        padding-right: 0;
+    }
+
+    .profile img {
+        width: 40%;
+        float: right; 
+    }
+
+
+    .container {
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    .box {
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 0.5rem;
+    }
+
+    .boxes {
+        margin-left: 2rem; 
+    }
+
+    .footer p {
+        padding: 0 3rem;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-nav {
+        float: right;
+        margin-right: 1rem;
+    }
+
+    .footer-nav li a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+
+    .footer-name,
+	.footer-nav,
+	.footer-nav li {
+		display: inline-block;
+		text-align: center;
+        margin-bottom: 1rem;
+    
+}
+
+
+}
+
+@media (min-width: 1024px){
+
+
+    .name {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .profile {
+        margin:2rem 1rem;
+    }
+
+    .profile img {
+        float: right; 
+        max-width: 400px;
+    }
+
+    .profile >p {
+        float: left;
+    }
+
+    .main-nav li {
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .top-container {
+        margin: 2rem 1rem;
+    }
+
+    .box  {
+        max-width: 30%;
+        justify-content: center; 
+        height: auto;
+        margin: 1rem 0.5rem;
+    }
+
+
+
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
