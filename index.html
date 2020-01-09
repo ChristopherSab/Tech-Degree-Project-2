@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <title>Student Portfolio Site</title>
 </head>
 
@@ -14,24 +15,25 @@
 
 
     <div class="wrapper">
-    <!--Main Header Section-->
+        <!--Main Header Section-->
         <header class="main-header">
-                <div class="top-container clearfix">
+            <div class="top-container clearfix">
                 <h1 class="name" id="home">Chris Sabaoth</h1>
                 <nav>
                     <ul class="main-nav">
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#portfolio-sec">PORTFOLIO</a></li>
                         <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
                     </ul>
                 </nav>
-                </div>
+            </div>
 
-                <div class="profile clearfix">
-                    <img src="images/responsive-layout-profile.png" alt="animated profile photo">
-                    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree
-                        in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-                </div>
+            <div class="profile clearfix">
+                <img src="images/responsive-layout-profile.png" alt="animated profile photo">
+                <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree
+                    in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            </div>
         </header>
 
         <!--Main Section (Portfolio)-->
@@ -40,57 +42,78 @@
                 <h2 id="portfolio-sec" class="title main-heading">Portfolio</h2>
 
                 <div class="boxes">
-                <div class="box">
-                    <img src="images/portfolio-1.png" alt="marketing page screenshot">
-                    <h3 class="title">Marketing Page</h3>
-                    <p>This project shows the front page of a marketing website meant for a specific business I'm
-                        interested in.</p>
+                    <div class="box">
+                        <img src="images/portfolio-1.png" alt="marketing page screenshot">
+                        <h3 class="title">Marketing Page</h3>
+                        <p>This project shows the front page of a marketing website meant for a specific business I'm
+                            interested in.</p>
 
-                </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/portfolio-2.png" alt="a screenshot of modern search page">
-                    <h3 class="title">Search Page</h3>
-                    <p>This project searches through a specific database to find information that the user is trying to
-                        look up.</p>
+                    <div class="box">
+                        <img src="images/portfolio-2.png" alt="a screenshot of modern search page">
+                        <h3 class="title">Search Page</h3>
+                        <p>This project searches through a specific database to find information that the user is trying
+                            to
+                            look up.</p>
 
-                </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/portfolio-3.png" alt="travel app">
-                    <h3 class="title">Travel App</h3>
-                    <p>This project compares travel times based on different transportation methods and tells you the
-                        best one.</p>
+                    <div class="box">
+                        <img src="images/portfolio-3.png" alt="travel app">
+                        <h3 class="title">Travel App</h3>
+                        <p>This project compares travel times based on different transportation methods and tells you
+                            the
+                            best one.</p>
 
-                </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/portfolio-4.png" alt="a picture of a digital map">
-                    <h3 class="title">Map of Favourite Spots</h3>
-                    <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it
-                        yourself walking tour.</p>
+                    <div class="box">
+                        <img src="images/portfolio-4.png" alt="a picture of a digital map">
+                        <h3 class="title">Map of Favourite Spots</h3>
+                        <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it
+                            yourself walking tour.</p>
 
-                </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/portfolio-5.png" alt="an image showing a photo gallery">
-                    <h3 class="title">Photo Gallery</h3>
-                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate
-                        through photos.</p>
+                    <div class="box">
+                        <img src="images/portfolio-5.png" alt="an image showing a photo gallery">
+                        <h3 class="title">Photo Gallery</h3>
+                        <p>This project shows pictures from a recent trip to the viewer and allows them to easily
+                            navigate
+                            through photos.</p>
 
-                </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/portfolio-6.png" alt="a photo of a calculator">
-                    <h3 class="title">Calculator</h3>
-                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                    <div class="box">
+                        <img src="images/portfolio-6.png" alt="a photo of a calculator">
+                        <h3 class="title">Calculator</h3>
+                        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.
+                        </p>
 
-                </div>
+                    </div>
                 </div>
 
 
             </div>
         </main>
+
+        <!--Skills Section-->
+
+        <div class="skills-section" id="skills">
+
+            <h3 class="title">SKILLS</h3>
+
+            <ul>
+                <li>HTML <i class="fab fa-html5"></i></li>
+                <li>CSS <i class="fab fa-css3"></i></li>
+                <li>JavaScript <i class="fab fa-js-square"></i></li>
+                <li>Python <i class="fab fa-python"></i></li>
+                <li>SQL <i class="fas fa-database"></i></li>
+            </ul>
+
+
+        </div>
 
         <!--Contact Section-->
         <div class="contact-section">
@@ -101,6 +124,7 @@
             <p>Email <span>email@yoursite.com</span></p>
         </div>
 
+
         <!--Footer Section-->
         <footer class="footer">
 
@@ -109,13 +133,14 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#portfolio-sec">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
                 </ul>
             </nav>
 
             <h4 class="footer-name">Chris Sabaoth</h4>
-            <h4 class= "back-to-top"><a href="#top">Back To Top</a></h4>
-       
-        
+            <h4 class="back-to-top"><a href="#home">Back To Top</a></h4>
+
+
         </footer>
     </div>
 
