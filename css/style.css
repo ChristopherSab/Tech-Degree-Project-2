@@ -6,15 +6,13 @@
     --tertiary:#FFFEA8;
 }
 
-
-/* Main Styles*/
+/*Main Page Styles*/
 
 *{
     line-height: 1.5;
     color: grey;
     box-sizing: border-box;
 }
-
 
 body {
     background: #FAF9F9;
@@ -29,7 +27,6 @@ body {
 }
 
 /*Header Section Styles*/
-
 
 .main-header {
     margin: 0 1rem;
@@ -64,7 +61,6 @@ body {
     color: #666666;
 }
 
-
 .profile img {
     width: 200px;
 }
@@ -84,7 +80,6 @@ body {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--primary);
 }
-
 
 .box img {
     width: 225px;
@@ -111,14 +106,12 @@ body {
     line-height: 2;
 }
 
-
 /*Footer Section Styles*/
 
 .contact-section {
     text-align: center;
     margin: 3rem 1rem 0 1rem;
     border-bottom: 1px solid var(--primary);
-
 }
 
 .contact-section span {
@@ -181,7 +174,6 @@ body {
         width: 40%;
         float: right; 
     }
-
 
     .container {
         align-items: center;
@@ -281,7 +273,7 @@ body {
         height: auto;
         margin: 1rem 0.5rem;
     }
-    
+
 }
 
 .clearfix::after {
